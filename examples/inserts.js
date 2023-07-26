@@ -1,0 +1,1 @@
+db.products.insert( { item: "card", qty: 15 } )

@@ -71,7 +71,7 @@ literal
 	;
 
 propertyName
-	: StringLiteral
+	: STRING_LITERAL
 	;
 
 comment

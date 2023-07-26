@@ -97,7 +97,7 @@ func mongoParserInit() {
 		8, 0, 111, 114, 3, 18, 9, 0, 112, 114, 3, 10, 5, 0, 113, 109, 1, 0, 0,
 		0, 113, 110, 1, 0, 0, 0, 113, 111, 1, 0, 0, 0, 113, 112, 1, 0, 0, 0, 114,
 		27, 1, 0, 0, 0, 115, 118, 7, 0, 0, 0, 116, 118, 5, 14, 0, 0, 117, 115,
-		1, 0, 0, 0, 117, 116, 1, 0, 0, 0, 118, 29, 1, 0, 0, 0, 119, 120, 5, 11,
+		1, 0, 0, 0, 117, 116, 1, 0, 0, 0, 118, 29, 1, 0, 0, 0, 119, 120, 5, 22,
 		0, 0, 120, 31, 1, 0, 0, 0, 121, 122, 7, 1, 0, 0, 122, 33, 1, 0, 0, 0, 13,
 		40, 42, 51, 54, 65, 72, 76, 79, 85, 94, 102, 113, 117,
 	}
@@ -1599,7 +1599,7 @@ func (p *mongoParser) ObjectLiteral() (localctx IObjectLiteralContext) {
 	}
 	_la = p.GetTokenStream().LA(1)
 
-	if _la == mongoParserStringLiteral {
+	if _la == mongoParserSTRING_LITERAL {
 		{
 			p.SetState(75)
 			p.PropertyNameAndValueList()
@@ -2635,7 +2635,7 @@ type IPropertyNameContext interface {
 	GetParser() antlr.Parser
 
 	// Getter signatures
-	StringLiteral() antlr.TerminalNode
+	STRING_LITERAL() antlr.TerminalNode
 
 	// IsPropertyNameContext differentiates from other interfaces.
 	IsPropertyNameContext()
@@ -2673,8 +2673,8 @@ func NewPropertyNameContext(parser antlr.Parser, parent antlr.ParserRuleContext,
 
 func (s *PropertyNameContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *PropertyNameContext) StringLiteral() antlr.TerminalNode {
-	return s.GetToken(mongoParserStringLiteral, 0)
+func (s *PropertyNameContext) STRING_LITERAL() antlr.TerminalNode {
+	return s.GetToken(mongoParserSTRING_LITERAL, 0)
 }
 
 func (s *PropertyNameContext) GetRuleContext() antlr.RuleContext {
@@ -2713,7 +2713,7 @@ func (p *mongoParser) PropertyName() (localctx IPropertyNameContext) {
 	p.EnterOuterAlt(localctx, 1)
 	{
 		p.SetState(119)
-		p.Match(mongoParserStringLiteral)
+		p.Match(mongoParserSTRING_LITERAL)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
