@@ -70,32 +70,52 @@ func TestMongoParser(t *testing.T) {
 }
 
 func TestObject(t *testing.T) {
-	s := `{
-		_id: ObjectId("64c0b8c4e65c51195e0584b2"),
-		name: 'danny',
-		age: 13,
-		groups: [ 'basketball', 'swimming' ],
-		tree: { a: 'a', b: 1 }
-	  }`
-	input := antlr.NewInputStream(s)
+	strings := []string{
+		`{
+			_id: ObjectId("64c0b8c4e65c51195e0584b2"),
+			name: 'danny',
+			age: 13,
+			groups: [ 'basketball', 'swimming' ],
+			tree: { a: 'a', b: 1 }
+		}`,
+		`[
+			{
+				_id: ObjectId("64c0b8c4e65c51195e0584b2"),
+				name: 'danny',
+				age: 13,
+				groups: [ 'basketball', 'swimming' ],
+				tree: { a: 'a', b: 1 }
+			},
+			{
+				_id: ObjectId("64c0c59f43a63d0d400dfef6"),
+				name: 'zp',
+				age: 31,
+				groups: [ 'hello', 'swimming' ]
+			},
+			{ _id: ObjectId("64c0c5b343a63d0d400dfef7"), name: 'tz', info: 66 }
+		]`,
+	}
+	for _, s := range strings {
+		input := antlr.NewInputStream(s)
 
-	lexer := mongoparser.NewmongoLexer(input)
+		lexer := mongoparser.NewmongoLexer(input)
 
-	stream := antlr.NewCommonTokenStream(lexer, 0)
-	p := mongoparser.NewmongoParser(stream)
+		stream := antlr.NewCommonTokenStream(lexer, 0)
+		p := mongoparser.NewmongoParser(stream)
 
-	lexerErrors := &CustomErrorListener{}
-	lexer.RemoveErrorListeners()
-	lexer.AddErrorListener(lexerErrors)
+		lexerErrors := &CustomErrorListener{}
+		lexer.RemoveErrorListeners()
+		lexer.AddErrorListener(lexerErrors)
 
-	parserErrors := &CustomErrorListener{}
-	p.RemoveErrorListeners()
-	p.AddErrorListener(parserErrors)
+		parserErrors := &CustomErrorListener{}
+		p.RemoveErrorListeners()
+		p.AddErrorListener(parserErrors)
 
-	p.BuildParseTrees = true
+		p.BuildParseTrees = true
 
-	_ = p.ObjectLiteral()
+		_ = p.ArgumentList()
 
-	require.Equal(t, 0, lexerErrors.errors)
-	require.Equal(t, 0, parserErrors.errors)
+		require.Equal(t, 0, lexerErrors.errors)
+		require.Equal(t, 0, parserErrors.errors)
+	}
 }
