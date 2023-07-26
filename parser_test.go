@@ -68,3 +68,34 @@ func TestMongoParser(t *testing.T) {
 		})
 	}
 }
+
+func TestObject(t *testing.T) {
+	s := `{
+		_id: ObjectId("64c0b8c4e65c51195e0584b2"),
+		name: 'danny',
+		age: 13,
+		groups: [ 'basketball', 'swimming' ],
+		tree: { a: 'a', b: 1 }
+	  }`
+	input := antlr.NewInputStream(s)
+
+	lexer := mongoparser.NewmongoLexer(input)
+
+	stream := antlr.NewCommonTokenStream(lexer, 0)
+	p := mongoparser.NewmongoParser(stream)
+
+	lexerErrors := &CustomErrorListener{}
+	lexer.RemoveErrorListeners()
+	lexer.AddErrorListener(lexerErrors)
+
+	parserErrors := &CustomErrorListener{}
+	p.RemoveErrorListeners()
+	p.AddErrorListener(parserErrors)
+
+	p.BuildParseTrees = true
+
+	_ = p.ObjectLiteral()
+
+	require.Equal(t, 0, lexerErrors.errors)
+	require.Equal(t, 0, parserErrors.errors)
+}
