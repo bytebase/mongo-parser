@@ -72,6 +72,7 @@ literal
 
 propertyName
 	: STRING_LITERAL
+	| StringLiteral
 	;
 
 comment
