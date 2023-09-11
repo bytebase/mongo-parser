@@ -1,4 +1,4 @@
-// Code generated from mongo.g4 by ANTLR 4.13.0. DO NOT EDIT.
+// Code generated from mongo.g4 by ANTLR 4.13.1. DO NOT EDIT.
 
 package parser // mongo
 import (
@@ -63,43 +63,43 @@ func mongoParserInit() {
 		104, 9, 11, 1, 12, 1, 12, 1, 12, 1, 12, 1, 13, 1, 13, 1, 13, 1, 13, 3,
 		13, 114, 8, 13, 1, 14, 1, 14, 3, 14, 118, 8, 14, 1, 15, 1, 15, 1, 16, 1,
 		16, 1, 16, 0, 0, 17, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26,
-		28, 30, 32, 0, 2, 1, 0, 11, 13, 1, 0, 9, 10, 123, 0, 34, 1, 0, 0, 0, 2,
-		40, 1, 0, 0, 0, 4, 44, 1, 0, 0, 0, 6, 56, 1, 0, 0, 0, 8, 58, 1, 0, 0, 0,
-		10, 60, 1, 0, 0, 0, 12, 63, 1, 0, 0, 0, 14, 72, 1, 0, 0, 0, 16, 74, 1,
-		0, 0, 0, 18, 83, 1, 0, 0, 0, 20, 89, 1, 0, 0, 0, 22, 97, 1, 0, 0, 0, 24,
-		105, 1, 0, 0, 0, 26, 113, 1, 0, 0, 0, 28, 117, 1, 0, 0, 0, 30, 119, 1,
-		0, 0, 0, 32, 121, 1, 0, 0, 0, 34, 35, 3, 2, 1, 0, 35, 36, 5, 0, 0, 1, 36,
-		1, 1, 0, 0, 0, 37, 41, 3, 4, 2, 0, 38, 41, 3, 6, 3, 0, 39, 41, 3, 32, 16,
-		0, 40, 37, 1, 0, 0, 0, 40, 38, 1, 0, 0, 0, 40, 39, 1, 0, 0, 0, 41, 42,
-		1, 0, 0, 0, 42, 40, 1, 0, 0, 0, 42, 43, 1, 0, 0, 0, 43, 3, 1, 0, 0, 0,
-		44, 45, 5, 19, 0, 0, 45, 51, 5, 18, 0, 0, 46, 52, 3, 10, 5, 0, 47, 48,
-		3, 8, 4, 0, 48, 49, 5, 18, 0, 0, 49, 50, 3, 10, 5, 0, 50, 52, 1, 0, 0,
-		0, 51, 46, 1, 0, 0, 0, 51, 47, 1, 0, 0, 0, 52, 54, 1, 0, 0, 0, 53, 55,
-		5, 17, 0, 0, 54, 53, 1, 0, 0, 0, 54, 55, 1, 0, 0, 0, 55, 5, 1, 0, 0, 0,
-		56, 57, 5, 17, 0, 0, 57, 7, 1, 0, 0, 0, 58, 59, 5, 22, 0, 0, 59, 9, 1,
-		0, 0, 0, 60, 61, 5, 22, 0, 0, 61, 62, 3, 12, 6, 0, 62, 11, 1, 0, 0, 0,
-		63, 65, 5, 1, 0, 0, 64, 66, 3, 14, 7, 0, 65, 64, 1, 0, 0, 0, 65, 66, 1,
-		0, 0, 0, 66, 67, 1, 0, 0, 0, 67, 68, 5, 2, 0, 0, 68, 13, 1, 0, 0, 0, 69,
-		73, 3, 28, 14, 0, 70, 73, 3, 16, 8, 0, 71, 73, 3, 18, 9, 0, 72, 69, 1,
-		0, 0, 0, 72, 70, 1, 0, 0, 0, 72, 71, 1, 0, 0, 0, 73, 15, 1, 0, 0, 0, 74,
-		76, 5, 3, 0, 0, 75, 77, 3, 22, 11, 0, 76, 75, 1, 0, 0, 0, 76, 77, 1, 0,
-		0, 0, 77, 79, 1, 0, 0, 0, 78, 80, 5, 4, 0, 0, 79, 78, 1, 0, 0, 0, 79, 80,
-		1, 0, 0, 0, 80, 81, 1, 0, 0, 0, 81, 82, 5, 5, 0, 0, 82, 17, 1, 0, 0, 0,
-		83, 85, 5, 6, 0, 0, 84, 86, 3, 20, 10, 0, 85, 84, 1, 0, 0, 0, 85, 86, 1,
-		0, 0, 0, 86, 87, 1, 0, 0, 0, 87, 88, 5, 7, 0, 0, 88, 19, 1, 0, 0, 0, 89,
-		94, 3, 26, 13, 0, 90, 91, 5, 4, 0, 0, 91, 93, 3, 26, 13, 0, 92, 90, 1,
-		0, 0, 0, 93, 96, 1, 0, 0, 0, 94, 92, 1, 0, 0, 0, 94, 95, 1, 0, 0, 0, 95,
-		21, 1, 0, 0, 0, 96, 94, 1, 0, 0, 0, 97, 102, 3, 24, 12, 0, 98, 99, 5, 4,
-		0, 0, 99, 101, 3, 24, 12, 0, 100, 98, 1, 0, 0, 0, 101, 104, 1, 0, 0, 0,
-		102, 100, 1, 0, 0, 0, 102, 103, 1, 0, 0, 0, 103, 23, 1, 0, 0, 0, 104, 102,
-		1, 0, 0, 0, 105, 106, 3, 30, 15, 0, 106, 107, 5, 8, 0, 0, 107, 108, 3,
-		26, 13, 0, 108, 25, 1, 0, 0, 0, 109, 114, 3, 28, 14, 0, 110, 114, 3, 16,
-		8, 0, 111, 114, 3, 18, 9, 0, 112, 114, 3, 10, 5, 0, 113, 109, 1, 0, 0,
-		0, 113, 110, 1, 0, 0, 0, 113, 111, 1, 0, 0, 0, 113, 112, 1, 0, 0, 0, 114,
-		27, 1, 0, 0, 0, 115, 118, 7, 0, 0, 0, 116, 118, 5, 14, 0, 0, 117, 115,
-		1, 0, 0, 0, 117, 116, 1, 0, 0, 0, 118, 29, 1, 0, 0, 0, 119, 120, 5, 22,
-		0, 0, 120, 31, 1, 0, 0, 0, 121, 122, 7, 1, 0, 0, 122, 33, 1, 0, 0, 0, 13,
-		40, 42, 51, 54, 65, 72, 76, 79, 85, 94, 102, 113, 117,
+		28, 30, 32, 0, 3, 1, 0, 11, 13, 2, 0, 11, 11, 22, 22, 1, 0, 9, 10, 123,
+		0, 34, 1, 0, 0, 0, 2, 40, 1, 0, 0, 0, 4, 44, 1, 0, 0, 0, 6, 56, 1, 0, 0,
+		0, 8, 58, 1, 0, 0, 0, 10, 60, 1, 0, 0, 0, 12, 63, 1, 0, 0, 0, 14, 72, 1,
+		0, 0, 0, 16, 74, 1, 0, 0, 0, 18, 83, 1, 0, 0, 0, 20, 89, 1, 0, 0, 0, 22,
+		97, 1, 0, 0, 0, 24, 105, 1, 0, 0, 0, 26, 113, 1, 0, 0, 0, 28, 117, 1, 0,
+		0, 0, 30, 119, 1, 0, 0, 0, 32, 121, 1, 0, 0, 0, 34, 35, 3, 2, 1, 0, 35,
+		36, 5, 0, 0, 1, 36, 1, 1, 0, 0, 0, 37, 41, 3, 4, 2, 0, 38, 41, 3, 6, 3,
+		0, 39, 41, 3, 32, 16, 0, 40, 37, 1, 0, 0, 0, 40, 38, 1, 0, 0, 0, 40, 39,
+		1, 0, 0, 0, 41, 42, 1, 0, 0, 0, 42, 40, 1, 0, 0, 0, 42, 43, 1, 0, 0, 0,
+		43, 3, 1, 0, 0, 0, 44, 45, 5, 19, 0, 0, 45, 51, 5, 18, 0, 0, 46, 52, 3,
+		10, 5, 0, 47, 48, 3, 8, 4, 0, 48, 49, 5, 18, 0, 0, 49, 50, 3, 10, 5, 0,
+		50, 52, 1, 0, 0, 0, 51, 46, 1, 0, 0, 0, 51, 47, 1, 0, 0, 0, 52, 54, 1,
+		0, 0, 0, 53, 55, 5, 17, 0, 0, 54, 53, 1, 0, 0, 0, 54, 55, 1, 0, 0, 0, 55,
+		5, 1, 0, 0, 0, 56, 57, 5, 17, 0, 0, 57, 7, 1, 0, 0, 0, 58, 59, 5, 22, 0,
+		0, 59, 9, 1, 0, 0, 0, 60, 61, 5, 22, 0, 0, 61, 62, 3, 12, 6, 0, 62, 11,
+		1, 0, 0, 0, 63, 65, 5, 1, 0, 0, 64, 66, 3, 14, 7, 0, 65, 64, 1, 0, 0, 0,
+		65, 66, 1, 0, 0, 0, 66, 67, 1, 0, 0, 0, 67, 68, 5, 2, 0, 0, 68, 13, 1,
+		0, 0, 0, 69, 73, 3, 28, 14, 0, 70, 73, 3, 16, 8, 0, 71, 73, 3, 18, 9, 0,
+		72, 69, 1, 0, 0, 0, 72, 70, 1, 0, 0, 0, 72, 71, 1, 0, 0, 0, 73, 15, 1,
+		0, 0, 0, 74, 76, 5, 3, 0, 0, 75, 77, 3, 22, 11, 0, 76, 75, 1, 0, 0, 0,
+		76, 77, 1, 0, 0, 0, 77, 79, 1, 0, 0, 0, 78, 80, 5, 4, 0, 0, 79, 78, 1,
+		0, 0, 0, 79, 80, 1, 0, 0, 0, 80, 81, 1, 0, 0, 0, 81, 82, 5, 5, 0, 0, 82,
+		17, 1, 0, 0, 0, 83, 85, 5, 6, 0, 0, 84, 86, 3, 20, 10, 0, 85, 84, 1, 0,
+		0, 0, 85, 86, 1, 0, 0, 0, 86, 87, 1, 0, 0, 0, 87, 88, 5, 7, 0, 0, 88, 19,
+		1, 0, 0, 0, 89, 94, 3, 26, 13, 0, 90, 91, 5, 4, 0, 0, 91, 93, 3, 26, 13,
+		0, 92, 90, 1, 0, 0, 0, 93, 96, 1, 0, 0, 0, 94, 92, 1, 0, 0, 0, 94, 95,
+		1, 0, 0, 0, 95, 21, 1, 0, 0, 0, 96, 94, 1, 0, 0, 0, 97, 102, 3, 24, 12,
+		0, 98, 99, 5, 4, 0, 0, 99, 101, 3, 24, 12, 0, 100, 98, 1, 0, 0, 0, 101,
+		104, 1, 0, 0, 0, 102, 100, 1, 0, 0, 0, 102, 103, 1, 0, 0, 0, 103, 23, 1,
+		0, 0, 0, 104, 102, 1, 0, 0, 0, 105, 106, 3, 30, 15, 0, 106, 107, 5, 8,
+		0, 0, 107, 108, 3, 26, 13, 0, 108, 25, 1, 0, 0, 0, 109, 114, 3, 28, 14,
+		0, 110, 114, 3, 16, 8, 0, 111, 114, 3, 18, 9, 0, 112, 114, 3, 10, 5, 0,
+		113, 109, 1, 0, 0, 0, 113, 110, 1, 0, 0, 0, 113, 111, 1, 0, 0, 0, 113,
+		112, 1, 0, 0, 0, 114, 27, 1, 0, 0, 0, 115, 118, 7, 0, 0, 0, 116, 118, 5,
+		14, 0, 0, 117, 115, 1, 0, 0, 0, 117, 116, 1, 0, 0, 0, 118, 29, 1, 0, 0,
+		0, 119, 120, 7, 1, 0, 0, 120, 31, 1, 0, 0, 0, 121, 122, 7, 2, 0, 0, 122,
+		33, 1, 0, 0, 0, 13, 40, 42, 51, 54, 65, 72, 76, 79, 85, 94, 102, 113, 117,
 	}
 	deserializer := antlr.NewATNDeserializer(nil)
 	staticData.atn = deserializer.Deserialize(staticData.serializedATN)
@@ -606,6 +606,13 @@ type CommandContext struct {
 	parser antlr.Parser
 }
 
+func NewEmptyCommandContext() *CommandContext {
+	var p = new(CommandContext)
+	antlr.InitBaseParserRuleContext(&p.BaseParserRuleContext, nil, -1)
+	p.RuleIndex = mongoParserRULE_command
+	return p
+}
+
 func InitEmptyCommandContext(p *CommandContext) {
 	antlr.InitBaseParserRuleContext(&p.BaseParserRuleContext, nil, -1)
 	p.RuleIndex = mongoParserRULE_command
@@ -821,17 +828,6 @@ func InitEmptyEmptyCommandContext(p *EmptyCommandContext) {
 
 func (*EmptyCommandContext) IsEmptyCommandContext() {}
 
-func NewEmptyCommandContext(parser antlr.Parser, parent antlr.ParserRuleContext, invokingState int) *EmptyCommandContext {
-	var p = new(EmptyCommandContext)
-
-	antlr.InitBaseParserRuleContext(&p.BaseParserRuleContext, parent, invokingState)
-
-	p.parser = parser
-	p.RuleIndex = mongoParserRULE_emptyCommand
-
-	return p
-}
-
 func (s *EmptyCommandContext) GetParser() antlr.Parser { return s.parser }
 
 func (s *EmptyCommandContext) SEMICOLON() antlr.TerminalNode {
@@ -869,7 +865,6 @@ func (s *EmptyCommandContext) Accept(visitor antlr.ParseTreeVisitor) interface{}
 }
 
 func (p *mongoParser) EmptyCommand() (localctx IEmptyCommandContext) {
-	localctx = NewEmptyCommandContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 6, mongoParserRULE_emptyCommand)
 	p.EnterOuterAlt(localctx, 1)
 	{
@@ -1599,7 +1594,7 @@ func (p *mongoParser) ObjectLiteral() (localctx IObjectLiteralContext) {
 	}
 	_la = p.GetTokenStream().LA(1)
 
-	if _la == mongoParserSTRING_LITERAL {
+	if _la == mongoParserStringLiteral || _la == mongoParserSTRING_LITERAL {
 		{
 			p.SetState(75)
 			p.PropertyNameAndValueList()
@@ -2636,6 +2631,7 @@ type IPropertyNameContext interface {
 
 	// Getter signatures
 	STRING_LITERAL() antlr.TerminalNode
+	StringLiteral() antlr.TerminalNode
 
 	// IsPropertyNameContext differentiates from other interfaces.
 	IsPropertyNameContext()
@@ -2677,6 +2673,10 @@ func (s *PropertyNameContext) STRING_LITERAL() antlr.TerminalNode {
 	return s.GetToken(mongoParserSTRING_LITERAL, 0)
 }
 
+func (s *PropertyNameContext) StringLiteral() antlr.TerminalNode {
+	return s.GetToken(mongoParserStringLiteral, 0)
+}
+
 func (s *PropertyNameContext) GetRuleContext() antlr.RuleContext {
 	return s
 }
@@ -2710,13 +2710,18 @@ func (s *PropertyNameContext) Accept(visitor antlr.ParseTreeVisitor) interface{}
 func (p *mongoParser) PropertyName() (localctx IPropertyNameContext) {
 	localctx = NewPropertyNameContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 30, mongoParserRULE_propertyName)
+	var _la int
+
 	p.EnterOuterAlt(localctx, 1)
 	{
 		p.SetState(119)
-		p.Match(mongoParserSTRING_LITERAL)
-		if p.HasError() {
-			// Recognition error - abort rule
-			goto errorExit
+		_la = p.GetTokenStream().LA(1)
+
+		if !(_la == mongoParserStringLiteral || _la == mongoParserSTRING_LITERAL) {
+			p.GetErrorHandler().RecoverInline(p)
+		} else {
+			p.GetErrorHandler().ReportMatch(p)
+			p.Consume()
 		}
 	}
 
