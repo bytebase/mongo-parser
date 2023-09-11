@@ -19,7 +19,10 @@ emptyCommand
 	;
 
 collection
-	: STRING_LITERAL;
+	: STRING_LITERAL
+	| SINGLE_QUOTED_STRING_LITERAL
+	| DOUBLE_QUOTED_STRING_LITERAL
+	
 
 functionCall
 	: FUNCTION_NAME = STRING_LITERAL arguments
@@ -71,7 +74,7 @@ literal
 	;
 
 propertyName
-	: STRING_LITERAL
+	: StringLiteral
 	;
 
 comment
@@ -90,6 +93,7 @@ MultiLineComment
 StringLiteral
 	: SINGLE_QUOTED_STRING_LITERAL
 	| DOUBLE_QUOTED_STRING_LITERAL
+	| STRING_LITERAL
 	;
 
 NullLiteral
