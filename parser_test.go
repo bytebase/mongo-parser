@@ -1,6 +1,7 @@
 package parser_test
 
 import (
+	"fmt"
 	"os"
 	"path"
 	"testing"
@@ -11,7 +12,7 @@ import (
 )
 
 type CustomErrorListener struct {
-	errors int
+	errors []string
 }
 
 func NewCustomErrorListener() *CustomErrorListener {
@@ -19,7 +20,7 @@ func NewCustomErrorListener() *CustomErrorListener {
 }
 
 func (l *CustomErrorListener) SyntaxError(recognizer antlr.Recognizer, offendingSymbol interface{}, line, column int, msg string, e antlr.RecognitionException) {
-	l.errors += 1
+	l.errors = append(l.errors, fmt.Sprintf("%s (%d:%d)", msg, line, column))
 	antlr.ConsoleErrorListenerINSTANCE.SyntaxError(recognizer, offendingSymbol, line, column, msg, e)
 }
 
@@ -63,8 +64,8 @@ func TestMongoParser(t *testing.T) {
 
 			_ = p.MongoCommands()
 
-			require.Equal(t, 0, lexerErrors.errors)
-			require.Equal(t, 0, parserErrors.errors)
+			require.Empty(t, lexerErrors.errors)
+			require.Empty(t, parserErrors.errors)
 		})
 	}
 }
@@ -115,7 +116,7 @@ func TestObject(t *testing.T) {
 
 		_ = p.ArgumentList()
 
-		require.Equal(t, 0, lexerErrors.errors)
-		require.Equal(t, 0, parserErrors.errors)
+		require.Empty(t, lexerErrors.errors)
+		require.Empty(t, parserErrors.errors)
 	}
 }
